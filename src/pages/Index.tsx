@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { RotateCcw } from "lucide-react";
+import { Phone, RotateCcw } from "lucide-react";
 import { ChatFlow } from "@/components/chat/ChatFlow";
 import logoFull from "@/assets/logo_full.webp";
 
@@ -26,6 +26,14 @@ const Index = () => {
           </div>
 
           <div className="flex items-center gap-2 shrink-0">
+            <a
+              href="tel:+919910244265"
+              className="inline-flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-2 rounded-[8px] bg-primary text-primary-foreground text-[11px] sm:text-xs font-semibold hover:bg-primary/90 transition shadow-glow"
+              aria-label="Call +91 9910244265"
+            >
+              <Phone className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+              +91 9910244265
+            </a>
             <button
               onClick={() => setResetKey((k) => k + 1)}
               disabled={isSubmitting}
